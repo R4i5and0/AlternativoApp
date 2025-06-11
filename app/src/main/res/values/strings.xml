@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Galpão Alternativo</string>
+    <string name="tela_login">Login</string>
+    <string name="tela_cadastro">Cadastro</string>
+    <string name="tela_home">Home</string>
+    <string name="tela_cardapio">Cardápio</string>
+    <string name="tela_carrinho">Carrinho</string>
+    <string name="tela_mural">Rock do Galpão</string>
+    <string name="tela_avaliacao">Avaliação</string>
+    <string name="tela_eventos">Eventos</string>
+
+    <string name="email_hint">Digite seu email</string>
+    <string name="senha_hint">Digite sua senha</string>
+    <string name="btn_login">Entrar</string>
+    <string name="link_cadastro">Ainda não tem conta? Cadastre-se!</string>
+
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="cadastrar">Cadastrar</string>
+
+    <string name="erro_campos_vazios">Preencha todos os campos!</string>
+    <string name="cadastro_sucesso">Cadastro realizado com sucesso!</string>
+    <string name="erro_cadastro">Erro ao cadastrar. Tente novamente.</string>
+    <string name="login_sucesso">Bem-vindo ao Galpão Alternativo!</string>
+    <string name="erro_login">Email ou senha incorretos.</string>
+
+    <string name="finalizar_pedido">Finalizar Pedido</string>
+    <string name="total_r_0_00">Total: R$ 0,00</string>
+    <string name="digite_sua_mensagem">Digite sua mensagem</string>
+    <string name="enviar">Enviar</string>
+    <string name="ver_carrinho">Ver Carrinho</string>
+    <string name="apagar">Apagar</string>
+
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="entrar">Entrar</string>
+    <string name="gerenciar_mural">Gerenciar Mural</string>
+    <string name="gerenciar_usu_rios">Gerenciar Usuários</string>
+    <string name="usu_rios">Usuários:</string>
+    <string name="mensagens_do_mural">Mensagens do Mural:</string>
+    <string name="excluir_mensagem_selecionada">Excluir Mensagem Selecionada</string>
+    <string name="excluir_usu_rio_selecionado">Excluir Usuário Selecionado</string>
+    <string name="sair_logout">Sair / Logout</string>
+
+    <string name="nova_mensagem">Nova Mensagem</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="categoria">Categoria</string>
+    <string name="bem_vindo_ao_galp_o_alternativo">Bem-vindo ao Galpão Alternativo! 🔥</string>
+    <string name="onde_cultura_underground_e_sabores_intensos_se_encontram_nvenha_experimentar_o_melhor_da_comida_artesanal_e_da_agenda_cultural_vibrante">Onde cultura underground e sabores intensos se encontram.\nVenha experimentar o melhor da comida artesanal e da agenda cultural vibrante!</string>
+    <string name="rock_your_taste_buds"> Rock your taste buds! 🎸</string>
+    <string name="card_pio">Cardápio</string>
+    <string name="eventos">Eventos</string>
+    <string name="mural">Mural</string>
+    <string name="avalia_o">Avaliação</string>
+    <string name="avalie">Avalie</string>
+    <string name="apagar_avalia_o">Apagar avaliação</string>
+    <string name="enviar_avalia_o">Enviar Avaliação</string>
+    <string name="deixe_seu_coment_rio">Deixe seu comentário</string>
+    <string name="mensagem_do_mural">🎸 Mensagem do mural</string>
+    <string name="usu_rio">👤 Usuário</string>
+    <string name="ver_meu_ltimo_pedido">Ver Meu Último Pedido</string>
+    <string name="fa_a_login_para_acessar_o_melhor_da_comida_e_cultura_alternativa">Faça login para acessar o melhor da comida e cultura alternativa!</string>
+    <string name="fundo_com_tema_de_rock">Fundo com tema de rock</string>
+    <string name="galp_o_alternativo">GALPÃO ALTERNATIVO</string>
+    <string name="entre_aumente_o_volume">Entre. Aumente o volume.</string>
+    <string name="ainda_n_o_tem_conta_cadastre_se">Ainda não tem conta? CADASTRE-SE</string>
+    <string name="logo_do_galp_o_alternativo">Logo do Galpão Alternativo</string>
+    <string name="imagem_de_fundo_com_textura_de_rock">Imagem de fundo com textura de rock</string>
+    <string name="logo_de_cadastro">Logo de cadastro</string>
+    <string name="crie_sua_conta">Crie Sua Conta</string>
+    <string name="todo">TODO</string>
+    <string name="o_palco_seu">O PALCO É SEU</string>
+    <string name="nosso_card_pio">NOSSO CARDÁPIO</string>
+    <string name="imagem_de_fundo_da_tela_de_cadastro">Imagem de fundo da tela de cadastro</string>
+    <string name="confirmar_senha">Confirmar Senha</string>
+    <string name="seu_carrinho">SEU CARRINHO</string>
+    <string name="hamb_rguer_com_cheddar_bacon_e_molho_secreto">Hambúrguer com cheddar, bacon e molho secreto</string>
+    <string name="hamb_rguer_rock_n_roll">Hambúrguer Rock\'n\'Roll</string>
+    <string name="r_25_90">R$ 25,90</string>
+    <string name="nome_do_produto">Nome do Produto</string>
+    <string name="cone_de_sucesso">Ícone de sucesso</string>
+    <string name="item_adicionado_ao_carrinho">Item adicionado ao carrinho!</string>
+    <string name="painel_administrativo">Painel Administrativo</string>
+    <string name="avalie_nossa_noite">AVALIE NOSSA NOITE</string>
+    <string name="sua_nota">Sua Nota:</string>
+    <string name="tipo_de_avalia_o">Tipo de Avaliação</string>
+    <string name="deixe_seu_coment_rio_opcional">Deixe seu comentário (opcional)</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="este_um_coment_rio_de_exemplo_sobre_a_experi_ncia_no_local">Este é um comentário de exemplo sobre a experiência no local.</string>
+    <string name="nome_do_usu_rio">Nome do Usuário</string>
+    <string name="tipo_comida">Tipo: Comida</string>
+    <string name="ver_todas_as_avalia_es">Ver todas as avaliações</string>
+    <string name="agenda_de_eventos">AGENDA DE EVENTOS</string>
+    <string name="imagem_do_evento">Imagem do Evento</string>
+    <string name="_25_de_dezembro_22_00">25 DE DEZEMBRO - 22:00</string>
+    <string name="descri_o_curta_do_evento_falando_sobre_as_bandas_e_o_que_esperar_da_noite">Descrição curta do evento, falando sobre as bandas e o que esperar da noite.</string>
+    <string name="nome_do_evento">Nome do Evento</string>
+    <string name="sua_balada_come_a_aqui">SUA BALADA COMEÇA AQUI!</string>
+    <string name="cone_de_raio">Ícone de raio</string>
+    <string name="cone_de_card_pio">Ícone de cardápio</string>
+    <string name="imagem_de_fundo_com_textura">Imagem de fundo com textura</string>
+    <string name="rock_do_galp_o">Rock Do Galpão</string>
+
+    <string-array name="avaliacao_tipos">
+        <item>Selecione o tipo de avaliação</item>
+        <item>Ambiente</item>
+        <item>Atendimento</item>
+        <item>Comida</item>
+        <item>Bebida</item>
+        <item>Show/Evento</item>
+    </string-array>
+
+</resources>

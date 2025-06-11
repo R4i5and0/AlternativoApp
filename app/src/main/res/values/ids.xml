@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="edtNome" type="id" />
+    <item name="edtEmail" type="id" />
+    <item name="tvCategoriaItem" type="id" />
+    <item name="tvTituloAvaliacao" type="id" />
+</resources>

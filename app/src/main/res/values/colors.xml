@@ -1,0 +1,50 @@
+<resources>
+
+
+        <color name="fundo_preto">#121212</color>
+
+        <color name="branco">#FFFFFF</color>
+
+        <color name="cinza_escuro">#212121</color>
+
+        <color name="neon_amarelo">#FFC107</color>
+
+        <color name="neon_rosa">#E91E63</color>
+
+        <color name="neon_vermelho">#FF5252</color>
+
+        <color name="neon_laranja">#FF6D00</color>
+
+        <color name="neon_roxo">#9C27B0</color>
+
+        <color name="azul_noturno">#3F51B5</color>
+
+        <color name="neon_verde">#00FF00</color>
+
+        <color name="neon_azul_claro">#00FFFF</color>
+
+        <color name="cinza_claro">#BDBDBD</color>
+
+        <color name="overlay_preto_65_opacidade">#A6000000</color>
+
+        <color name="verde_militar">#4B5320</color>
+
+        <color name="azul_petroleo">#0A5F6E</color>
+
+        <color name="marrom_ferrugem">#A52A2A</color>
+
+        <color name="rosa_antigo">#AA8989</color>
+
+        <color name="azul_ardosia">#708090</color>
+
+        <color name="amarelo_queimado">#E0B160</color>
+
+        <color name="roxo_ameixa">#663399</color>
+
+        <color name="vinho_escuro">#800020</color>
+
+        <color name="cinza_chumbo">#36454F</color>
+
+        <color name="prata_escovado">#A9A9A9</color>
+
+</resources>

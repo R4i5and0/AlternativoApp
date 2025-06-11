@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/cinza_escuro"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/icone_pedido"
+            app:tint="@color/neon_amarelo"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/cone_de_sucesso" />
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_adicionado_ao_carrinho"
+            android:textColor="@color/branco"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/dialog_button_ver_carrinho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Carrinho"
+            android:background="@drawable/btn_primary_background"
+            app:backgroundTint="@color/neon_rosa"
+            android:textColor="@color/branco"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
