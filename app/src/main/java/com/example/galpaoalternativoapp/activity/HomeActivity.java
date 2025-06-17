@@ -116,7 +116,6 @@ public class HomeActivity extends AppCompatActivity {
                 // CORRIGIDO: Agora que o ícone ic_info existe, esta linha não vai mais travar o app.
                 tvTitle.setText("🤔 Nenhum Pedido");
                 tvMessage.setText("Você ainda não realizou nenhum pedido no nosso app.");
-                ivIcon.setImageResource(R.drawable.ic_info); // Usa o ícone que acabamos de criar
             }
 
             // Define a ação do botão OK para fechar o diálogo
