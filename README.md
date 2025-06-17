@@ -44,5 +44,4 @@ O escopo do projeto excedeu o requisito inicial de um único CRUD, resultando na
 Projeto concluído em **Junho de 2025**. ✔️  
 
 ---
-
-Esse README agora tem um estilo mais organizado, com títulos bem estruturados, ícones para ajudar na leitura e uso correto de Markdown para evitar espaçamentos estranhos. Se quiser que eu ajuste mais alguma coisa, só dizer! 🚀😃
+🚀😃
