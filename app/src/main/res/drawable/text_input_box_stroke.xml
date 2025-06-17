@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este seletor define as cores da borda da caixa de texto
+para diferentes estados (focado, normal, etc.),
+deixando a interface mais dinâmica.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Cor da borda quando a caixa de texto está em foco (selecionada) -->
+    <item android:color="#FFC107" android:state_focused="true"/>
+
+    <!-- Cor da borda quando o mouse está sobre ela (útil para emuladores) -->
+    <item android:color="#888888" android:state_hovered="true"/>
+
+    <!-- Cor padrão da borda -->
+    <item android:color="#666666"/>
+
+</selector>

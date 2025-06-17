@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background_rounded"
+    android:padding="24dp">
+
+    <!-- Título com Ícone -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_title_finalizado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="✅ Pedido Finalizado"
+            android:textColor="#FFEB3B"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Linha Divisória -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#444444" />
+
+    <!-- Mensagem Principal -->
+    <TextView
+        android:id="@+id/dialog_message_principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:lineSpacingExtra="4dp"
+        tools:text="Seu pedido foi realizado com sucesso!"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- Detalhes do Pedido (Total e Senha) -->
+    <TextView
+        android:id="@+id/dialog_message_detalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:lineSpacingExtra="6dp"
+        tools:text="🧾 Total: R$ 25.90\n🔐 Sua senha é: 3069"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- Mensagem de Aviso Final -->
+    <TextView
+        android:id="@+id/dialog_message_aviso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        tools:text="Guarde esta senha! Aguarde seu pedido ser chamado no telão."
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <!-- Botão de OK -->
+    <Button
+        android:id="@+id/dialog_button_ok_finalizado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_primary_background"
+        android:paddingHorizontal="32dp"
+        android:text="OK"
+        android:textColor="#333333"
+    app:backgroundTint="#FFEB3B"
+    tools:ignore="HardcodedText" />
+
+</LinearLayout>

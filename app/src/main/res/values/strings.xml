@@ -101,6 +101,12 @@
     <string name="cone_de_card_pio">Ícone de cardápio</string>
     <string name="imagem_de_fundo_com_textura">Imagem de fundo com textura</string>
     <string name="rock_do_galp_o">Rock Do Galpão</string>
+    <string name="diminuir_quantidade">Diminuir quantidade</string>
+    <string name="aumentar_quantidade">Aumentar quantidade</string>
+    <string name="remover_item_do_carrinho">Remover item do carrinho</string>
+    <string name="ok">OK</string>
+    <string name="avalia_es_da_galera">AVALIAÇÕES DA GALERA</string>
+    <string name="ainda_n_o_h_avalia_es">Ainda não há avaliações.</string>
 
     <string-array name="avaliacao_tipos">
         <item>Selecione o tipo de avaliação</item>

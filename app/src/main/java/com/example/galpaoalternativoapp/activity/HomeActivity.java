@@ -3,7 +3,10 @@ package com.example.galpaoalternativoapp.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.AlertDialog;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.util.Log;
 
@@ -77,25 +80,52 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        // Este é o seu listener do botão. Substitua o conteúdo dele por isto:
+        // Este é o seu listener do botão. Substitua o conteúdo dele por isto:
         btnVerPedido.setOnClickListener(v -> {
             Log.d("HomeActivityDebug", "btnVerMeuPedido clicado.");
 
             String detalhesDoPedido = dbHelper.getUltimoPedidoDoUsuario(idDoUsuarioLogado);
-            Log.d("HomeActivityDebug", "Detalhes do pedido: " + (detalhesDoPedido != null ? detalhesDoPedido.substring(0, Math.min(detalhesDoPedido.length(), 100)) + "..." : "Nenhum"));
+            Log.d("HomeActivityDebug", "Detalhes do pedido: " + (detalhesDoPedido != null ? "Encontrado" : "Nenhum"));
 
+            // Carrega o layout customizado
+            View dialogView = getLayoutInflater().inflate(R.layout.dialog_ultimo_pedido, null);
+
+            // Cria o AlertDialog
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setView(dialogView);
+            final AlertDialog dialog = builder.create();
 
-            if (detalhesDoPedido != null) {
-                builder.setTitle("✅ Seu Último Pedido");
-                builder.setMessage(detalhesDoPedido);
-            } else {
-                builder.setTitle("🤔 Nenhum Pedido Encontrado");
-                builder.setMessage("Você ainda não realizou nenhum pedido.");
+            // Remove o fundo padrão do sistema para que nossos cantos arredondados apareçam
+            if (dialog.getWindow() != null) {
+                dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
             }
 
-            builder.setPositiveButton("OK", null);
-            builder.show();
+            // Pega os componentes de dentro do nosso layout
+            TextView tvTitle = dialogView.findViewById(R.id.dialog_title);
+            TextView tvMessage = dialogView.findViewById(R.id.dialog_message);
+            ImageView ivIcon = dialogView.findViewById(R.id.dialog_icon);
+            Button btnOk = dialogView.findViewById(R.id.dialog_button_ok);
+
+            // Configura o conteúdo do diálogo
+            if (detalhesDoPedido != null) {
+                tvTitle.setText(" Seu Último Pedido");
+                tvMessage.setText(detalhesDoPedido);
+                ivIcon.setImageResource(R.drawable.ic_receipt); // Ícone de recibo (já deve existir)
+            } else {
+                // CORRIGIDO: Agora que o ícone ic_info existe, esta linha não vai mais travar o app.
+                tvTitle.setText("🤔 Nenhum Pedido");
+                tvMessage.setText("Você ainda não realizou nenhum pedido no nosso app.");
+                ivIcon.setImageResource(R.drawable.ic_info); // Usa o ícone que acabamos de criar
+            }
+
+            // Define a ação do botão OK para fechar o diálogo
+            btnOk.setOnClickListener(view -> dialog.dismiss());
+
+            // Mostra o diálogo customizado
+            dialog.show();
         });
+
 
         btnLogout.setOnClickListener(v -> {
             // Limpa qualquer dado de sessão (se você tiver SharedPreferences para guardar o login, limpe-o aqui)

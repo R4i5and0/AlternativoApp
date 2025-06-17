@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/avalie_nossa_noite"
-                android:textColor="@color/branco"
+                android:textColor="@color/roxo_ameixa"
                 android:textSize="28sp"
                 android:textStyle="bold"
                 android:layout_gravity="center_horizontal"
@@ -52,7 +52,7 @@
                     android:layout_height="wrap_content"
                     android:entries="@array/avaliacao_tipos"
                     android:inputType="none"
-                    android:textColor="@color/neon_laranja"
+                    android:textColor="@color/azul_noturno"
                     tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -60,7 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sua_nota"
-                android:textColor="@color/branco"
+                android:textColor="@color/roxo_ameixa"
                 android:layout_marginTop="24dp"
                 android:layout_gravity="center_horizontal"/>
 
@@ -88,7 +88,7 @@
                     android:layout_height="120dp"
                     android:gravity="top"
                     android:inputType="textMultiLine"
-                    android:textColor="@color/neon_laranja"
+                    android:textColor="@color/branco"
                     tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:text="ENVIAR AVALIAÇÃO"
                 android:padding="16dp"
-                android:textColor="@color/fundo_preto"
+                android:textColor="@color/branco"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:background="@drawable/btn_primary_background"
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:text="@string/ver_todas_as_avalia_es"
-                android:textColor="@color/neon_amarelo"
+                android:textColor="@color/roxo_ameixa"
                 app:strokeColor="@color/neon_amarelo"
                 tools:ignore="VisualLintButtonSize" />
 

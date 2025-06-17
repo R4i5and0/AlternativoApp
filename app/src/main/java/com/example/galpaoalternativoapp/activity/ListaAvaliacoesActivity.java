@@ -1,4 +1,3 @@
-// Arquivo: activity/ListaAvaliacoesActivity.java - VERSÃO FINAL E CORRIGIDA
 package com.example.galpaoalternativoapp.activity;
 
 import android.content.Intent;

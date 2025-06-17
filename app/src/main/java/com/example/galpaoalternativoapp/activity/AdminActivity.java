@@ -2,24 +2,21 @@ package com.example.galpaoalternativoapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log; // Adicionado para Log.e
+import android.util.Log; // Adicionado para Log
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.galpaoalternativoapp.R;
 import com.example.galpaoalternativoapp.controller.DBHelper;
 import com.example.galpaoalternativoapp.model.MensagemMural;
-// Importe seu modelo Usuario aqui se você tiver um:
-// import com.example.galpaoalternativoapp.model.Usuario;
+
 
 import java.util.ArrayList;
 import java.util.List;

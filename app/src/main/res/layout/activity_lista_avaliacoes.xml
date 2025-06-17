@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    tools:context=".activity.ListaAvaliacoesActivity">
 
+    <!-- Fundo com textura e sobreposição escura -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/fundo_textura"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:importantForAccessibility="no"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#A6000000" />
 
+    <!-- Conteúdo Principal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,19 +26,46 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="AVALIAÇÕES DA GALERA"
-            android:textColor="@color/branco"
+            android:text="@string/avalia_es_da_galera"
+            android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold"
             android:padding="16dp"
             android:layout_gravity="center_horizontal"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewAvaliacoes"
+        <!--
+            O FrameLayout aqui é um truque para sobrepor a lista e a mensagem de "vazio".
+            Apenas um deles estará visível por vez.
+        -->
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="8dp"
-            android:clipToPadding="false"
-            tools:listitem="@layout/item_avaliacao"/>
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewAvaliacoes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:padding="8dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:listitem="@layout/item_avaliacao" />
+
+            <!--
+                NOVO E IMPORTANTE: TextView para quando não há avaliações.
+                O código Java controla a visibilidade (visibility) deste componente.
+            -->
+            <TextView
+                android:id="@+id/tvSemAvaliacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ainda_n_o_h_avalia_es"
+                android:textColor="#CCCCCC"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+        </FrameLayout>
+
     </LinearLayout>
 </FrameLayout>

@@ -6,9 +6,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
+import com.example.galpaoalternativoapp.model.ItemCarrinho;
 import com.example.galpaoalternativoapp.model.Avaliacao;
-import com.example.galpaoalternativoapp.model.ItemCardapio;
 import com.example.galpaoalternativoapp.model.MensagemMural; // Adicionar este import
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +19,7 @@ import android.util.Log;
 public class DBHelper extends SQLiteOpenHelper {
 
     private static final String NOME_BANCO = "galpao_alternativo.db";
-    private static final int VERSAO_BANCO = 7; // Mantenha ou INCREMENTE este número para forçar onUpgrade()
+    private static final int VERSAO_BANCO = 8; // Mantenha ou INCREMENTE este número para forçar onUpgrade()
 
     // Tabelas e colunas
     private static final String TABELA_USUARIOS = "usuarios";
@@ -336,14 +335,24 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    public int salvarPedido(List<ItemCardapio> itens, double total, int usuarioId) {
+    public int salvarPedido(List<ItemCarrinho> itens, double total, int usuarioId) {
         SQLiteDatabase db = this.getWritableDatabase();
 
+        // --- MUDANÇA PRINCIPAL AQUI ---
+        // Agora construímos o texto do pedido usando a quantidade de cada ItemCarrinho.
         StringBuilder itensComoTexto = new StringBuilder();
-        for (ItemCardapio item : itens) {
-            itensComoTexto.append(String.format(Locale.getDefault(), "%s (R$ %.2f)\n", item.getNome(), item.getPreco()));
+        for (ItemCarrinho item : itens) {
+            // Formato: "2x Nome do Produto (R$ PRECO_UNITARIO)"
+            itensComoTexto.append(String.format(
+                    Locale.getDefault(),
+                    "%dx %s (R$ %.2f)\n",
+                    item.getQuantidade(), // Usa a quantidade do ItemCarrinho
+                    item.getNome(),       // Usa o nome do ItemCarrinho
+                    item.getPreco()       // Usa o preço do ItemCarrinho
+            ));
         }
 
+        // A geração de senha e inserção no banco continuam iguais.
         int senhaGerada = new Random().nextInt(9000) + 1000;
 
         ContentValues values = new ContentValues();
