@@ -45,3 +45,11 @@ Projeto concluído em **Junho de 2025**. ✔️
 
 ---
 🚀😃
+---
+
+## 🎥 Apresentação Conceitual  
+
+Este vídeo apresenta a proposta criativa do aplicativo **Galpão Alternativo**, destacando sua estética temática, as funcionalidades principais e a experiência do usuário. 
+Para quem quer entender o funcionamento geral e o visual do app:
+
+[![Assista ao vídeo](https://img.youtube.com/vi/tO0rnUvHQUg/0.jpg)](https://www.youtube.com/watch?v=tO0rnUvHQUg)
